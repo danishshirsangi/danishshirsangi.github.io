@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="./style.css">
     <title>Danish Shirsangi.</title>
 
@@ -26,9 +27,9 @@
 
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
 
             <div class="icon-switch">
@@ -44,7 +45,7 @@
                 <div class="col" id="home-head">
                     <h1>Danish<br >Shirsangi.</h1>
                     <p>Welcome to my Portfolio</p>
-                    <a href="#">About Me</a>
+                    <a href="#about">About Me</a>
                 </div>
                 <div class="col" id="home-image" style="max-width: 428px;min-width:300px;">
                     <svg viewBox="0 0 451 420" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,9 +198,20 @@
                         border-radius: 3px;">django</code> for backend which takes care of much of the hassle of web development</p>
                 </div>
                 <div class="col" id="col2" >
-                    <h1>Graphic Designing</h1>
-                    <p>G D is all about visual communication.So knowing
-                        GD is must being Webdev</p>
+                    <h1>Other Skills</h1>
+                    <p><code style="color: rgb(133, 36, 100);
+                        font-weight: bold;
+                        background: rgba(220, 220, 220, 0.363);
+                        padding: 0px 4px;
+                        border-radius: 3px;">Python</code>, <code style="color: rgb(133, 36, 100);
+                        font-weight: bold;
+                        background: rgba(220, 220, 220, 0.363);
+                        padding: 0px 4px;
+                        border-radius: 3px;">JavaScript</code> and <code style="color: rgb(133, 36, 100);
+                        font-weight: bold;
+                        background: rgba(220, 220, 220, 0.363);
+                        padding: 0px 4px;
+                        border-radius: 3px;">REST API</code> development with Django Rest Framework.</p>
                 </div>
             </div>
         </div>
@@ -222,19 +234,18 @@
                         I’m Fluent in English, Hindi and Kannada
                     </p>
 
-                    <div class="a-social">
-                        <h1>You can find me on</h1>
-                        <div class="a-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
+                    
                 </div>
 
                 <div class="col" id="cola2">
-                    <h1>Find out more about me by reading my blogs </h1>
-                    <a href="#">Blogs</a>
+                    <h1>Find out more about me by connecting to my socials. </h1>
+                    <div class="a-social">
+                        <div class="a-links">
+                            <a href="https://github.com/danishshirsangi"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/danish-shirsangi-4035b91bb/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://instagram.com/danishshirsangi"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -252,10 +263,13 @@
                             <div class="contact-line"></div>
                         </div>
     
-                        <input type="text" name="fname" id="" placeholder="Your Name"> <br>
-                        <input type="email" name="email" id="" placeholder="Your Email"> <br>
-                        <textarea name="message" id="texta" placeholder="Your Message"></textarea> <br>
-                        <input type="submit" value="Submit">
+                        <form id="my-form" action="https://formspree.io/f/xzbonyqy" method="POST">
+                            <input type="text" name="fname" id="" placeholder="Your Name"> <br>
+                            <input type="email" name="email" id="usermail" placeholder="Your Email"> <br>
+                            <textarea name="message" id="texta" placeholder="Your Message"></textarea> <br>
+                            <input type="submit" value="Submit" id="my-form-button">
+                            <p id="my-form-status"></p>
+                        </form>
                     </div>
                 </div>
 

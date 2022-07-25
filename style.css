@@ -19,7 +19,7 @@ nav{
     background: var(--background);
     width: 100%;
     height: 70px;
-    max-width: 1366px;
+    
     margin: 0 auto;
 }
 #nav-wrapper{
@@ -390,18 +390,21 @@ nav{
     max-width: 360px;
 }
 #cola2 a{
-    margin: 20px 5px 10px 0px;
+    margin: 30px 5px 10px 0px;
     text-decoration: none;
+    font-size: 1rem;
     color: white;
     padding: 8px 20px;
+    position: relative;
+    top: 10px;
     background: linear-gradient(111.46deg, #FF5F4A 1.76%, #FF3920 81.01%);
-    box-shadow: 8px 4px 70px 3px rgba(255, 118, 6, 0.356);
     border-radius: 8px;
-    max-width: 80px;
+    max-width: 120px;
 }
 #cola2 a:hover{
     position: relative;
     transform: translateY(-3px);
+    box-shadow: 8px 4px 70px 3px rgba(255, 118, 6, 0.356);
 }
 @media (max-width: 776px){
     #col1{
@@ -484,3 +487,8 @@ nav{
     -webkit-backdrop-filter: blur(100px);
 }
 
+#my-form-status{
+    color: white;
+    margin: 8px 0px;
+    text-align: center;
+}
